@@ -5,7 +5,7 @@ import Pokedex from './components/Pokedex';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Ap p">
       <Pokedex pokemonList={ pokemonList } />
     </div>
   );
