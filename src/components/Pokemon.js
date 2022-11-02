@@ -14,7 +14,7 @@ class Pokemon extends React.Component {
           <p>{name}</p>
           <p>
             <Link to={ `/pokemon/${id}` }>
-              info
+              Details
             </Link>
           </p>
           <p>{type}</p>
