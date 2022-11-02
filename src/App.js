@@ -4,6 +4,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import pokemonList from './data';
 import Pokedex from './components/Pokedex';
 import About from './components/About';
+import PokemonDetails from './components/PokemonDetails';
 
 function App() {
   return (
@@ -16,6 +17,12 @@ function App() {
           exact
           path="/"
           render={ (props) => <Pokedex { ...props } pokemonList={ pokemonList } /> }
+        />
+        <Route
+          path="/pokemon/:id"
+          render={
+            (props) => <PokemonDetails { ...props } pokemonList={ pokemonList } />
+          }
         />
       </Switch>
     </div>
