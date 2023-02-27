@@ -5,6 +5,7 @@ import pokemonList from './data';
 import Pokedex from './components/Pokedex';
 import About from './components/About';
 import PokemonDetails from './components/PokemonDetails';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             (props) => <PokemonDetails { ...props } pokemonList={ pokemonList } />
           }
         />
+        <Route component={ NotFound } />
       </Switch>
     </div>
   );
